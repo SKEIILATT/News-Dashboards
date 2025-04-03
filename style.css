@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+/*
+    SECCIÓN HEADER
+*/
+h1{
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+}
+header{
+    background-color: #1a53ff;
+    display: flex;
+    justify-content: space-between;
+}
+#buscar-noticias{
+    width: 50%;
+    border-radius: 10px;
+    margin: 5px auto;
+    padding: 0 0 0 5px;
+    border-style: solid;
+    border-color:#595959;
+    font-size: 15px;
+}
+/*
+    SECCIÓN ASIDE
+*/
+#aside-filtros-categorias{
+    background-color: #99ccff;
+    padding: 10px;
+}
+/*
+    SECCIÓN MAIN CONTENIDO
+*/
+#contenedor-botones-filtros{
+    display: flex;
+    flex-direction: column;
+}
+.boton-filtro{
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px; 
+    border-style: solid;
+    border-color: #595959;  
+}
+
+#contenedor-filtros{
+    width: 75%;
+    background-color: white;
+    border: 1px solid rgb(230, 224, 224);
+    border-radius: 5px;
+    margin: 5px 0 0 5px;
+    padding: 2px;
+    
+}
+.botones-filtros-activo{
+    color: white;
+    background-color:#1a53ff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.botones-filtros-noActivo{
+    color: rgb(118, 116, 116);
+    background-color:white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
