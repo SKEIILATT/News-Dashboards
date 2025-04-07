@@ -17,20 +17,23 @@
     <aside id="aside-filtros-categorias">
         <h2>Categorias</h2>
         <div id="contenedor-botones-filtros">
-            <button class="boton-filtro">Todas</button>
-            <button class="boton-filtro">Categoria 1</button>
-            <button class="boton-filtro">Categoria 1</button>
-            <button class="boton-filtro">Categoria 1</button>
-            <button class="boton-filtro">Categoria 1</button>
+            <button class="boton-filtro" id="filtro-general">General</button>
+            <button class="boton-filtro" id="filtro-business">Negocios</button>
+            <button class="boton-filtro" id="filtro-entertainment">Entretenimiento</button>
+            <button class="boton-filtro" id="filtro-health">Salud</button>
+            <button class="boton-filtro" id="filtro-science">Ciencia</button>
+            <button class="boton-filtro" id="filtro-sports">Deportes</button>
+            <button class="boton-filtro" id="filtro-technology">Tecnología</button>
         </div>
     </aside>
+    <div class="contenedor-filtros">
+        <button class="boton-filtro-noticias botones-filtros-activo" id="boton-destacado" >Destacados</button>
+        <button class="boton-filtro-noticias botones-filtros-noActivo" id="boton-reciente">Recientes</button>
+        <button class="boton-filtro-noticias botones-filtros-noActivo" id="boton-popular">Populares</button>
+    </div>
     <main id="contenido-noticias">
-        <div id="contenedor-filtros">
-            <button class="botones-filtros-activo">Destacados</button>
-            <button class="botones-filtros-noActivo">Recientes</button>
-            <button class="botones-filtros-noActivo">Populares</button>
-        </div>
     </main>
     <script src="script.js"> </script>
 </body>
 </html>
+
