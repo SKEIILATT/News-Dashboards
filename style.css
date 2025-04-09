@@ -28,41 +28,55 @@ header{
 /*
     SECCIÓN ASIDE
 */
-#aside-filtros-categorias{
+#aside-filtros-categorias,#aside-filtros-fuente{
     background-color: #99ccff;
     padding: 10px;
 }
 /*
     SECCIÓN MAIN CONTENIDO
 */
-#contenedor-botones-filtros{
+#contenedor-botones-filtros,#contenedor-botones-filtros-fuente{
     display: flex;
     flex-direction: column;
-}
-.boton-filtro{
-    text-align: left;
-    padding-left: 10px;
-    margin-bottom: 8px;
-    border-radius: 5px; 
-    border-style: solid;
-    border-color: #595959;  
-}
-
-#contenedor-filtros{
-    width: 75%;
-    background-color: white;
-    border: 1px solid rgb(230, 224, 224);
-    border-radius: 5px;
-    margin: 10px 0 0 40px;
-    padding: 2px;
+    margin-bottom: 5px;
     
 }
+.boton-filtro,.boton-filtro-fuente{
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px; 
+    border-style: solid;
+    border-color: #595959;
+    cursor: pointer;
+    background-color: rgb(237, 235, 233);
+}
+h2{
+    margin-bottom: 20px;
+}
+
+
+.contenedor-filtros{
+    width: 95%;
+    border: 1px solid rgb(230, 224, 224);
+    background-color: #e9edef;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    
+    margin-top: 10px;
+    
+}
+
 .botones-filtros-activo{
     color: white;
     background-color:#1a53ff;
     padding: 10px;
     border: none;
     border-radius: 5px;
+    margin: 10px 0 0 15px ;
+    border: 1px solid rgb(230, 224, 224);
+    cursor: pointer;
 }
 
 
@@ -72,6 +86,9 @@ header{
     padding: 10px;
     border: none;
     border-radius: 5px;
+    margin: 10px 0 0 15px ;
+    border: 1px solid rgb(230, 224, 224);
+    cursor: pointer;
 }
 .img-api{
     height: 50%;
@@ -94,3 +111,49 @@ header{
     padding: 2.5px;
 }
 
+/*
+MEDIA QUERIES PARA EL TAMAÑO EN LAPTOS
+*/
+@media (width >= 600px){
+    #buscar-noticias{
+        width: 20%;
+        margin-right: 10px;
+    }
+    #aside-filtros-categorias{
+        width: 25%;
+        border-radius: 10px;
+        
+    }
+    .boton-filtro{
+        width: 90%;
+        padding: 5px;
+    }
+    .seccion-filtros{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px;
+    }
+    .contenedor-filtros{
+        width: 90%;
+        margin: 0;
+    }
+    #contenido-noticias{
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    .news-card{
+       width: 40%;
+       padding: 20px;
+    }
+    .img-api{
+        border-radius: 5px;
+        width: 80%;
+        height: 50%;
+        margin-bottom: 10px;
+    }
+}

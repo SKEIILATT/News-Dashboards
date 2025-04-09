@@ -11,29 +11,42 @@
 
     <header>
         <h1>NewsPapers</h1>
-        <input type="search" name="buscador-noticias" id="buscar-noticias" placeholder="🔎 Buscar Noticias...">
+        <input type="search" name="buscador-noticias" id="buscar-noticias" placeholder="🔎 Search news...">
     </header>
-
-    <aside id="aside-filtros-categorias">
-        <h2>Categorias</h2>
-        <div id="contenedor-botones-filtros">
-            <button class="boton-filtro" id="filtro-general">General</button>
-            <button class="boton-filtro" id="filtro-business">Negocios</button>
-            <button class="boton-filtro" id="filtro-entertainment">Entretenimiento</button>
-            <button class="boton-filtro" id="filtro-health">Salud</button>
-            <button class="boton-filtro" id="filtro-science">Ciencia</button>
-            <button class="boton-filtro" id="filtro-sports">Deportes</button>
-            <button class="boton-filtro" id="filtro-technology">Tecnología</button>
+    <div class="seccion-filtros">
+        <aside id="aside-filtros-categorias">
+            <div id="contenedor-botones-filtros">
+                <h2>Category</h2>
+                <button class="boton-filtro" id="filtro-general">General</button>
+                <button class="boton-filtro" id="filtro-business">Business</button>
+                <button class="boton-filtro" id="filtro-entertainment">Entertainment</button>
+                <button class="boton-filtro" id="filtro-health">Health</button>
+                <button class="boton-filtro" id="filtro-science">Science</button>
+                <button class="boton-filtro" id="filtro-sports">Sports</button>
+                <button class="boton-filtro" id="filtro-technology">Technology</button>
+            </div>
+            <div id="contenedor-botones-filtros-fuente">
+                <h2>Sources</h2>
+                <button class="boton-filtro-fuente" id="filtro-bbc.co.uk">BBC News</button>
+                <button class="boton-filtro-fuente" id="filtro-cnn.com">CNN</button>
+                <button class="boton-filtro-fuente" id="filtro-nytimes.com">The New York Times</button>
+                <button class="boton-filtro-fuente" id="filtro-foxnews.com">Fox News</button>
+                <button class="boton-filtro-fuente" id="filtro-reuters.com">Reuters</button>
+                <button class="boton-filtro-fuente" id="filtro-theguardian.com">The Guardian</button>
+                <button class="boton-filtro-fuente" id="filtro-bloomberg.com">Bloomberg</button>
+            </div>
+        </aside>        
+        <div class="contenedor-filtros">
+            <button class="boton-filtro-noticias botones-filtros-noActivo" id="boton-reciente">PublishedAt</button>
+            <button class="boton-filtro-noticias botones-filtros-activo" id="boton-destacado" >Relevancy</button>
+            <button class="boton-filtro-noticias botones-filtros-noActivo" id="boton-popular">Popularity</button>
+            <main id="contenido-noticias">
+            </main>
         </div>
-    </aside>
-    <div class="contenedor-filtros">
-        <button class="boton-filtro-noticias botones-filtros-activo" id="boton-destacado" >Destacados</button>
-        <button class="boton-filtro-noticias botones-filtros-noActivo" id="boton-reciente">Recientes</button>
-        <button class="boton-filtro-noticias botones-filtros-noActivo" id="boton-popular">Populares</button>
     </div>
-    <main id="contenido-noticias">
-    </main>
     <script src="script.js"> </script>
 </body>
 </html>
+
+
 
