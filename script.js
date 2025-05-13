@@ -1,5 +1,5 @@
 /// CONSUMIR EL API
-const apiKey1 = '9ab8d09adbec4f7f8ff0e8a2ca5010ee';
+const apiKey1 = '----';
 const contenedor_noticias = document.getElementById("contenido-noticias");
 const input = document.getElementById("buscar-noticias");
 let filtroActual = "publishedAt";
